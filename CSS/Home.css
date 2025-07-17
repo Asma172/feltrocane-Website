@@ -1,4 +1,4 @@
-/* ==================== Start: Global Styles ==================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -165,11 +165,11 @@ button {
     position: relative;
     min-width: 250px;
     margin-bottom: 20px;
-    border-left: 2px solid #0066cc;
+    border-left: 2px solid #2B8E89;
 }
 
 .feature-number {
-    color: #0066cc;
+    color: #2B8E89;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -222,7 +222,7 @@ button {
 }
 
 .archSmall,.archBig {
-    background-color: #9bc9f3;
+    background-color: #ACD7DE;
     border-radius: 280px 280px 0 0;
     display: flex;
     justify-content: center;
@@ -657,7 +657,7 @@ button {
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -679,7 +679,7 @@ button {
 .scroll-top:hover {
     background-color: #2a5bc9;
     transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(61, 108, 227, 0.4);
+    box-shadow: 0 6px 18px #2B8E89;
 }
 
 .scroll-top i {

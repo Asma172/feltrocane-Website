@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,15 @@
     <link rel="stylesheet" href="../CSS/NavFooter/Nav.css">
     <link rel="stylesheet" href="../CSS/NavFooter/Footer.css">
 </head>
+
 <body>
     <!-- navbar -->
     <div class="navbar">
-        <div class="logo">Eco Flow</div>
+        <div class="logo"><img src="/Assets/photo_2025-05-10_23-59-34.jpg" alt="" style="width: 120px; height: 80px;"></div>
         <div class="nav-links">
             <a href="../HTML/Home.html">Home</a>
             <a href="../HTML/AboutUs.html">About Us</a>
-            <a href="../HTML/CustomerService.html" >Customer Service</a>
+            <a href="../HTML/CustomerService.html">Customer Service</a>
         </div>
         <div class="cart-icon">
             <a href="Cart.html" title="View Cart"><i class="fas fa-shopping-cart"></i></a>
@@ -43,38 +45,38 @@
                     <div class="subtotal-header">Subtotal</div>
                     <div class="remove-header">Remove</div>
                 </div>
-                
+
                 <div id="cart-items">
                     <!-- Cart items will be populated here -->
                 </div>
             </div>
-            
+
             <div class="cart-summary-section">
                 <div class="cart-summary-content">
                     <h2>Cart Summary</h2>
-                    
+
                     <div class="summary-row">
                         <span>Subtotal</span>
-                        <span id="subtotal-amount">$187.00</span>
+                        <span id="subtotal-amount">L.E187.00</span>
                     </div>
-                    
+
                     <div class="summary-row">
                         <span>Shipping</span>
                         <span>Free</span>
                     </div>
-                    
+
                     <div class="summary-row total">
                         <span>Total</span>
-                        <span id="total-amount">$187.00</span>
+                        <span id="total-amount">310L.E</span>
                     </div>
-                    
+
                     <div class="promo-code">
                         <input type="text" placeholder="Enter promo code" id="promo-input">
                         <button id="apply-promo">Apply</button>
                     </div>
-                    
+
                     <a href="Checkout.html"><button id="checkout-btn">Proceed to Checkout</button></a>
-                    
+
                     <div class="checkout-section">
                         <h3 class="checkout-title">Guaranteed Safe Checkout</h3>
                         <div class="payment-methods">
@@ -87,7 +89,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="continue-shopping">
             <a href="#" id="continue-shopping-btn">
                 <i class="fas fa-arrow-left"></i> Continue Shopping
@@ -100,65 +102,65 @@
         <h2>You may also like</h2>
         <div class="products-grid">
             <div class="product-card">
-                <span class="card-badge">sales!</span>
+                <!-- <span class="card-badge">sales!</span> -->
                 <div class="add-to-cart-icon" onclick="quickAddToCart(1)">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
-                <img src="../Assets/Products/1.jpg" alt="Water Filtration System" class="product-image">
+                <img src="/Assets/hamel.jpg" alt="Base Filter" class="product-image">
                 <div class="product-details">
-                    <h3 class="product-category">Filter</h3>
-                    <h4 class="product-name">Eco Flow Mini Filter</h4>
+                    <h3 class="product-category">Base</h3>
+                    <h4 class="product-name">Eco-Friendly Housing</h4>
                     <div class="product-price">
-                        <span class="original">$127.00</span>
-                        <span class="discounted">$80.00</span>
+                        <!-- <span class="original"></span> -->
+                        <span class="discounted">70L.E</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="product-card">
-                <span class="card-badge">sales!</span>
+                <!-- <span class="card-badge">sales!</span> -->
                 <div class="add-to-cart-icon" onclick="quickAddToCart(2)">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
-                <img src="../Assets/Products/2.jpg" alt="Water Filtration System" class="product-image">
+                <img src="/Assets/hanafia.jpg" alt="Water Filtration System" class="product-image">
                 <div class="product-details">
-                    <h3 class="product-category">Filter</h3>
-                    <h4 class="product-name">Premium Sugar Cane Filter</h4>
+                    <h3 class="product-category">Hook</h3>
+                    <h4 class="product-name">Premium RO Water Filtration Tap</h4>
                     <div class="product-price">
-                        <span class="original">$127.00</span>
-                        <span class="discounted">$80.00</span>
+                        <!-- <span class="original"></span> -->
+                        <span class="discounted">30L.E</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="product-card">
-                <span class="card-badge">sales!</span>
+                <!-- <span class="card-badge">sales!</span> -->
                 <div class="add-to-cart-icon" onclick="quickAddToCart(3)">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
-                <img src="../Assets/Products/3.jpg" alt="Water Filtration System" class="product-image">
+                <img src="/Assets/housing.jpg" alt="Water Filtration System" class="product-image">
                 <div class="product-details">
-                    <h3 class="product-category">Filter</h3>
+                    <h3 class="product-category">Housing</h3>
                     <h4 class="product-name">Advanced Eco Filter</h4>
                     <div class="product-price">
-                        <span class="original">$127.00</span>
-                        <span class="discounted">$80.00</span>
+                        <!-- <span class="original">L.E127.00</span> -->
+                        <span class="discounted">200L.E</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="product-card">
-                <span class="card-badge">sales!</span>
+                <!-- <span class="card-badge">sales!</span> -->
                 <div class="add-to-cart-icon" onclick="quickAddToCart(4)">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
-                <img src="../Assets/Products/4.jpg" alt="Water Filtration System" class="product-image">
+                <img src="/Assets/feltrocane.jpg" alt="Water Filtration System" class="product-image">
                 <div class="product-details">
-                    <h3 class="product-category">Filter</h3>
+                    <h3 class="product-category">Base Filter</h3>
                     <h4 class="product-name">Complete Filter System</h4>
                     <div class="product-price">
-                        <span class="original">$127.00</span>
-                        <span class="discounted">$80.00</span>
+                        <!-- <span class="original"></span> -->
+                        <span class="discounted">780L.E</span>
                     </div>
                 </div>
             </div>
@@ -172,7 +174,7 @@
                 <h1>Sugar Cane Shop</h1>
                 <p>Welcome to the world of Florist, where flowers come to life with love and creativity. Discover our story, our passion for flowers, and our commitment to making every moment memorable.</p>
             </div>
-            
+
             <div class="footer-links">
                 <h3>Links</h3>
                 <ul>
@@ -182,7 +184,7 @@
                     <li><a href="../HTML/CustomerService.html">FAQs</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-contact">
                 <h3>Contact Us</h3>
                 <p><i class="fas fa-map-marker-alt"></i> 13 Fifth Avenue, New York 101660</p>
@@ -190,7 +192,7 @@
                 <p><i class="fas fa-phone-alt"></i> +91 987 654 321</p>
             </div>
         </div>
-    
+
         <div class="footer-copyright">
             <div class="social-icons">
                 <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
@@ -198,7 +200,7 @@
                 <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
             </div>
-                <p>Copyright © 2025 Sugar Cane Shop</p>
+            <p>Copyright © 2025 Sugar Cane Shop</p>
         </div>
 
         <div class="scroll-top">
@@ -210,4 +212,5 @@
     <script src="../JS/Nav.js"></script>
     <script src="../JS/AddtoCart.js"></script>
 </body>
+
 </html>

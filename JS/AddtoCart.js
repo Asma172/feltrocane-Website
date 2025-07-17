@@ -19,10 +19,10 @@
 function addProductToCart(product, quantity = 1) {
     // Load current cart
     let cart = getCart();
-    
+
     // Check if product already exists in cart
     const existingProductIndex = cart.findIndex(item => item.id === product.id);
-    
+
     if (existingProductIndex !== -1) {
         // Update quantity if product already exists
         cart[existingProductIndex].quantity += quantity;
@@ -37,15 +37,15 @@ function addProductToCart(product, quantity = 1) {
             quantity: quantity
         });
     }
-    
+
     // Save updated cart
     saveCart(cart);
-    
+
     // Update cart count in UI
     updateCartCount();
-    
+
     // Show notification
-    showNotification(`${product.name} added to cart!`, 'success');
+    showNotification(`0{product.name} added to cart!`, 'success');
 }
 
 /**
@@ -71,11 +71,11 @@ function saveCart(cart) {
 function updateCartCount() {
     const cart = getCart();
     const cartCount = document.getElementById('cartCount');
-    
+
     if (cartCount) {
         const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
         cartCount.textContent = totalItems;
-        
+
         // Add animation effect
         cartCount.classList.add('pulse');
         setTimeout(() => {
@@ -103,7 +103,7 @@ function removeFromCart(productId) {
 function updateItemQuantity(productId, change) {
     let cart = getCart();
     const item = cart.find(item => item.id === productId);
-    
+
     if (item) {
         const newQuantity = item.quantity + change;
         if (newQuantity > 0) {
@@ -123,15 +123,15 @@ function updateItemQuantity(productId, change) {
  */
 function addToCartFromHome(event, productId) {
     event.stopPropagation(); // Prevent navigation to product page
-    
+
     // Get product details from the DOM
     const productCard = event.target.closest('.product-card');
     const name = productCard.querySelector('.product-name').textContent;
     const category = productCard.querySelector('.product-category').textContent;
     const priceText = productCard.querySelector('.sale-price').textContent;
-    const price = parseFloat(priceText.replace('$', ''));
+    const price = parseFloat(priceText.replace('0', ''));
     const image = productCard.querySelector('img').src;
-    
+
     // Create product object
     const product = {
         id: productId,
@@ -140,7 +140,7 @@ function addToCartFromHome(event, productId) {
         image: image,
         category: category
     };
-    
+
     // Add to cart
     addProductToCart(product);
 }
@@ -152,14 +152,14 @@ function addToCartFromPurchase() {
     // Get quantity from input
     const quantityInput = document.getElementById('quantityInput');
     const quantity = parseInt(quantityInput.value) || 1;
-    
+
     // Get product details
     const productTitle = document.querySelector('.product-title').textContent;
     const category = document.querySelector('.categories a').textContent;
     const priceText = document.querySelector('.current-price').textContent;
-    const price = parseFloat(priceText.replace('$', ''));
+    const price = parseFloat(priceText.replace('0', ''));
     const image = document.getElementById('mainImage').src;
-    
+
     // Create product object
     const product = {
         id: 1, // Main product is always ID 1 on the purchase page
@@ -168,7 +168,7 @@ function addToCartFromPurchase() {
         image: image,
         category: category
     };
-    
+
     // Add to cart
     addProductToCart(product, quantity);
 }
@@ -181,16 +181,16 @@ function quickAddToCart(productId) {
     // Find the product card
     const productCards = document.querySelectorAll('.product-card');
     const productCard = Array.from(productCards)[productId - 1];
-    
+
     if (!productCard) return;
-    
+
     // Get product details
     const name = productCard.querySelector('.product-name').textContent;
     const category = productCard.querySelector('.product-category').textContent;
     const priceText = productCard.querySelector('.discounted').textContent;
-    const price = parseFloat(priceText.replace('$', ''));
+    const price = parseFloat(priceText.replace('0', ''));
     const image = productCard.querySelector('.product-image').src;
-    
+
     // Create product object
     const product = {
         id: productId,
@@ -199,7 +199,7 @@ function quickAddToCart(productId) {
         image: image,
         category: category
     };
-    
+
     // Add to cart
     addProductToCart(product);
 }
@@ -214,12 +214,12 @@ function quickAddToCart(productId) {
 function showNotification(message, type = 'info') {
     // Check if notification container exists, create if not
     let notificationContainer = document.querySelector('.notification-container');
-    
+
     if (!notificationContainer) {
         notificationContainer = document.createElement('div');
         notificationContainer.className = 'notification-container';
         document.body.appendChild(notificationContainer);
-        
+
         // Add styles if not already in CSS
         const style = document.createElement('style');
         style.textContent = `
@@ -269,11 +269,11 @@ function showNotification(message, type = 'info') {
         `;
         document.head.appendChild(style);
     }
-    
+
     // Create notification element
     const notification = document.createElement('div');
-    notification.className = `notification ${type}`;
-    
+    notification.className = `notification 0{type}`;
+
     // Add icon based on type
     let icon = '';
     switch (type) {
@@ -286,15 +286,15 @@ function showNotification(message, type = 'info') {
         default:
             icon = '<i class="fas fa-info-circle"></i>';
     }
-    
-    notification.innerHTML = `${icon} ${message}`;
+
+    notification.innerHTML = `0{icon} 0{message}`;
     notificationContainer.appendChild(notification);
-    
+
     // Show notification with animation
     setTimeout(() => {
         notification.classList.add('show');
     }, 10);
-    
+
     // Remove notification after delay
     setTimeout(() => {
         notification.classList.remove('show');
@@ -308,9 +308,9 @@ function showNotification(message, type = 'info') {
 document.addEventListener('DOMContentLoaded', function() {
     // Clear cart data on page refresh
     localStorage.removeItem('ecoFlowCart');
-    
+
     updateCartCount();
-    
+
     // Add event listeners for cart icons on Home page
     const productCarts = document.querySelectorAll('.product-cart');
     productCarts.forEach((cart, index) => {
@@ -318,18 +318,18 @@ document.addEventListener('DOMContentLoaded', function() {
             addToCartFromHome(event, index + 1);
         });
     });
-    
+
     // Add event listener for add to cart button on Purchase page
     const addToCartBtn = document.querySelector('.add-to-cart');
     if (addToCartBtn) {
         addToCartBtn.addEventListener('click', addToCartFromPurchase);
     }
-    
+
     // Add event listeners for quantity buttons on Purchase page
     const decreaseBtn = document.querySelector('.quantity-btn:first-child');
     const increaseBtn = document.querySelector('.quantity-btn:nth-child(4)');
     const quantityInput = document.getElementById('quantityInput');
-    
+
     if (decreaseBtn && quantityInput) {
         decreaseBtn.addEventListener('click', function() {
             const currentValue = parseInt(quantityInput.value) || 1;
@@ -338,14 +338,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     if (increaseBtn && quantityInput) {
         increaseBtn.addEventListener('click', function() {
             const currentValue = parseInt(quantityInput.value) || 1;
             quantityInput.value = currentValue + 1;
         });
     }
-    
+
     if (quantityInput) {
         quantityInput.addEventListener('change', function() {
             const value = parseInt(this.value);
@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Add event listeners for quick add to cart in related products
     const quickAddBtns = document.querySelectorAll('.add-to-cart-icon');
     quickAddBtns.forEach((btn) => {

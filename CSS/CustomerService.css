@@ -57,7 +57,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../Assets/sug.png') no-repeat center center;
+  background: linear-gradient(rgba(172, 215, 222, 0.7), rgba(172, 215, 222 0.6)), url('../Assets/sug.png') no-repeat center center;
   background-size: cover;
   z-index: 0;
   transform: scale(1.05);
@@ -104,6 +104,7 @@ button {
   margin-bottom: 20px;
   line-height: 1.2;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  color: #2B8E89;
 }
 
 .content p {
@@ -165,7 +166,7 @@ button {
   bottom: -10px;
   width: 80px;
   height: 4px;
-  background-color: #3D6CE3;
+  background-color: #2B8E89;
 }
 
 .contact-left p {
@@ -217,7 +218,7 @@ button {
 }
 
 .contact-value:hover {
-  color: #3D6CE3;
+  color: #2B8E89;
 }
 
 .social-icons h4 {
@@ -231,7 +232,7 @@ hr {
   margin: 25px 0;
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, #3D6CE3, transparent);
+  background: linear-gradient(90deg, #2B8E89, transparent);
 }
 
 .social-icons i {
@@ -244,7 +245,7 @@ hr {
 
 .social-icons i:hover {
   transform: translateY(-5px);
-  color: #3D6CE3;
+  color: #2B8E89;
 }
 
 .contact-right {
@@ -297,7 +298,7 @@ hr {
 .contact-right .input-group input:focus,
 .contact-right .input-group textarea:focus {
   outline: none;
-  border-color: #3D6CE3;
+  border-color: #2B8E89;
   box-shadow: 0 0 0 2px rgba(61, 108, 227, 0.2);
   background-color: #fff;
 }
@@ -309,7 +310,7 @@ hr {
 
 .contact-right button[type="submit"] {
   padding: 15px 25px;
-  background-color: #3D6CE3;
+  background-color: #2B8E89;
   color: white;
   border: none;
   border-radius: 8px;
@@ -326,7 +327,7 @@ hr {
 .contact-right button[type="submit"]:hover {
   background-color: #2a4db3;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(61, 108, 227, 0.4);
+  box-shadow: 0 5px 15px #2B8E89;
 }
 
 @media (max-width: 768px) {
@@ -381,7 +382,7 @@ hr {
   bottom: -10px;
   width: 60px;
   height: 4px;
-  background-color: #3D6CE3;
+  background-color: #2B8E89;
 }
 
 .faq-left p {
@@ -475,7 +476,7 @@ hr {
   right: 0;
   top: 0;
   font-size: 24px;
-  color: #3D6CE3;
+  color: #2B8E89;
   transition: transform 0.3s ease;
 }
 
@@ -503,7 +504,7 @@ hr {
 
 .faq hr {
   height: 1.5px;
-  background: linear-gradient(90deg, #3D6CE3, transparent);
+  background: linear-gradient(90deg, #2B8E89, transparent);
   margin: 15px 0 0;
   transition: margin 0.3s ease;
 }
@@ -525,7 +526,7 @@ hr {
 
 /* ==================== Start: Call to Action Section ==================== */
 .cta-section {
-  background: linear-gradient(135deg, #3D6CE3, #2a4db3);
+  background: linear-gradient(135deg, #2B8E89, #2a4db3);
   padding: 80px 20px;
   text-align: center;
   color: white;
@@ -581,7 +582,7 @@ hr {
 
 .cta-button {
   background-color: white;
-  color: #3D6CE3;
+  color: #2B8E89;
   padding: 15px 40px;
   border: none;
   border-radius: 50px;

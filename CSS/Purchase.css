@@ -92,7 +92,7 @@ body, html {
 }
 
 .breadcrumb a:hover {
-    color: #3D6CE3;
+    color: #2B8E89;
 }
 /* ==================== End: Main Content ==================== */
 
@@ -136,7 +136,7 @@ body, html {
 
 .thumbnail:hover, 
 .thumbnail.active-thumbnail {
-    border-color: #3D6CE3;
+    border-color: #2B8E89;
     transform: scale(1.08);
 }
 
@@ -315,7 +315,7 @@ body, html {
 }
 
 .quantity-input:focus {
-    border-color: #3D6CE3;
+    border-color: #2B8E89;
     outline: none;
 }
 
@@ -503,7 +503,7 @@ button[type="submit"]:hover::before,
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     animation: slideInFromLeft 1.2s ease-out forwards;
 }
 
@@ -621,7 +621,7 @@ button[type="submit"]:hover::before,
     transform: translateX(-50%);
     width: 0;
     height: 1px;
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     transition: width 0.3s ease;
 }
 
@@ -638,7 +638,7 @@ button[type="submit"]:hover::before,
 }
 
 .product-card:hover .product-name {
-    color: #3D6CE3;
+    color: #2B8E89;
 }
 
 .product-price {
@@ -712,7 +712,7 @@ button[type="submit"]:hover::before,
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -734,7 +734,7 @@ button[type="submit"]:hover::before,
 .scroll-top:hover {
     background-color: #2a5bc9;
     transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(61, 108, 227, 0.4);
+    box-shadow: 0 6px 18px #2B8E89;
 }
 
 .scroll-top i {

@@ -110,7 +110,7 @@ body, html {
 }
 
 .promo-code button {
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -192,7 +192,7 @@ body, html {
 .continue-shopping a {
     display: inline-flex;
     align-items: center;
-    color: #3D6CE3;
+    color: #2B8E89;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -323,7 +323,7 @@ body, html {
 
 .empty-cart-button {
     display: inline-block;
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
@@ -458,7 +458,7 @@ body, html {
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -480,7 +480,7 @@ body, html {
 .scroll-top:hover {
     background-color: #2a5bc9;
     transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(61, 108, 227, 0.4);
+    box-shadow: 0 6px 18px #2B8E89;
 }
 
 .scroll-top i {
@@ -727,7 +727,7 @@ body, html {
 }
 
 .promo-code input:focus {
-    border-color: #3D6CE3;
+    border-color: #2B8E89;
     box-shadow: 0 0 0 3px rgba(61, 108, 227, 0.2);
     outline: none;
 }
@@ -838,7 +838,7 @@ body, html {
 }
 
 .quantity-input:focus {
-    border-color: #3D6CE3;
+    border-color: #2B8E89;
     outline: none;
 }
 
@@ -911,7 +911,7 @@ body, html {
 
 .product-card:hover .card-badge {
     transform: scale(1.1);
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     color: white;
 }
 
@@ -923,7 +923,7 @@ body, html {
 .product-card:hover .add-to-cart-icon {
     transform: scale(1.2) rotate(5deg);
     opacity: 1;
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     color: white;
 }
 
@@ -932,7 +932,7 @@ body, html {
 }
 
 .product-card:hover .product-name {
-    color: #3D6CE3;
+    color: #2B8E89;
 }
 
 .discounted {
@@ -943,9 +943,7 @@ body, html {
     transform: scale(1.1);
     color: #ff4b4b;
 }
-/* ==================== End: Related Products Animation ==================== */
 
-/* ==================== Start: Scroll Top Button Animation ==================== */
 .scroll-top {
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -956,7 +954,7 @@ body, html {
 
 .scroll-top:hover {
     transform: translateY(-10px) scale(1.1);
-    box-shadow: 0 10px 25px rgba(61, 108, 227, 0.5);
+    box-shadow: 0 10px 25px #2B8E89;
 }
 
 .scroll-top i {

@@ -32,7 +32,7 @@
     bottom: -8px;
     width: 50px;
     height: 3px;
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
 }
 
 .footer-brand p {
@@ -60,7 +60,7 @@
     bottom: -8px;
     width: 40px;
     height: 3px;
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
 }
 
 .footer-links ul {
@@ -86,12 +86,12 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: #3D6CE3;
+    color: #2B8E89;
     transition: transform 0.3s ease;
 }
 
 .footer-links ul li a:hover {
-    color: #3D6CE3;
+    color: #2B8E89;
     padding-left: 20px;
 }
 
@@ -110,7 +110,7 @@
 .footer-contact i {
     margin-right: 15px;
     font-size: 18px;
-    color: #3D6CE3;
+    color: #2B8E89;
     width: 20px;
     text-align: center;
 }
@@ -150,7 +150,7 @@
 }
 
 .footer-copyright .social-icons a:hover {
-    background-color: #3D6CE3;
+    background-color: #2B8E89;
     color: white;
     transform: translateY(-3px);
 }

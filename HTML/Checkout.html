@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,11 @@
     <link rel="stylesheet" href="../CSS/NavFooter/Nav.css">
     <link rel="stylesheet" href="../CSS/NavFooter/Footer.css">
 </head>
+
 <body>
     <!-- navbar -->
     <div class="navbar">
-        <div class="logo">Eco Flow</div>
+        <div class="logo"><img src="/Assets/photo_2025-05-10_23-59-34.jpg" alt="" style="width: 120px; height: 80px;"></div>
         <div class="nav-links">
             <a href="../HTML/Home.html">Home</a>
             <a href="../HTML/AboutUs.html">About Us</a>
@@ -116,7 +118,7 @@
                                     <input type="radio" id="express" name="shippingMethod" value="express">
                                     <label for="express">
                                         <span class="shipping-name">Express Shipping</span>
-                                        <span class="shipping-price">$12.00</span>
+                                        <span class="shipping-price">30L.E</span>
                                         <span class="shipping-time">2-3 Business Days</span>
                                     </label>
                                 </div>
@@ -124,7 +126,7 @@
                                     <input type="radio" id="overnight" name="shippingMethod" value="overnight">
                                     <label for="overnight">
                                         <span class="shipping-name">Overnight Shipping</span>
-                                        <span class="shipping-price">$25.00</span>
+                                        <span class="shipping-price">60L.E</span>
                                         <span class="shipping-time">Next Business Day</span>
                                     </label>
                                 </div>
@@ -211,7 +213,7 @@
                 <!-- Step 3: Order Review -->
                 <div class="checkout-step-content" id="step-3">
                     <h2>Review Your Order</h2>
-                    
+
                     <div class="review-sections">
                         <div class="review-section">
                             <h3>Shipping Information <button class="edit-btn" data-step="1"><i class="fas fa-edit"></i> Edit</button></h3>
@@ -219,14 +221,14 @@
                                 <!-- Shipping info will be populated by JS -->
                             </div>
                         </div>
-                        
+
                         <div class="review-section">
                             <h3>Payment Method <button class="edit-btn" data-step="2"><i class="fas fa-edit"></i> Edit</button></h3>
                             <div class="review-info" id="payment-info-review">
                                 <!-- Payment info will be populated by JS -->
                             </div>
                         </div>
-                        
+
                         <div class="review-section">
                             <h3>Order Summary</h3>
                             <div class="order-items-review" id="order-items">
@@ -234,11 +236,11 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="order-totals">
                         <div class="total-row">
                             <span>Subtotal</span>
-                            <span id="review-subtotal">$0.00</span>
+                            <span id="review-subtotal">L.E0.00</span>
                         </div>
                         <div class="total-row">
                             <span>Shipping</span>
@@ -246,29 +248,29 @@
                         </div>
                         <div class="total-row discount-row hidden" id="discount-row">
                             <span>Discount</span>
-                            <span id="review-discount">-$0.00</span>
+                            <span id="review-discount">-L.E0.00</span>
                         </div>
                         <div class="total-row">
                             <span>Tax</span>
-                            <span id="review-tax">$0.00</span>
+                            <span id="review-tax">L.E0.00</span>
                         </div>
                         <div class="total-row final-total">
                             <span>Total</span>
-                            <span id="review-total">$0.00</span>
+                            <span id="review-total">L.E0.00</span>
                         </div>
                     </div>
-                    
+
                     <div class="terms-check">
                         <input type="checkbox" id="termsAgree" name="termsAgree" required>
                         <label for="termsAgree">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
                     </div>
-                    
+
                     <div class="form-actions">
                         <button type="button" id="back-to-payment-btn" class="secondary-btn">Back to Payment</button>
                         <button type="button" id="place-order-btn" class="primary-btn">Place Order</button>
                     </div>
                 </div>
-                
+
                 <!-- Order Confirmation -->
                 <div class="checkout-step-content" id="order-confirmation">
                     <div class="confirmation-content">
@@ -278,15 +280,15 @@
                         <h2>Thank You For Your Order!</h2>
                         <p>Order #<span id="order-number">ECO-12345</span> has been placed successfully.</p>
                         <p class="confirmation-message">We've sent a confirmation email to <span id="confirmation-email">example@email.com</span> with your order details.</p>
-                        
+
                         <div class="order-tracking-info">
                             <h3>Estimated Delivery</h3>
                             <p id="delivery-date">May 25 - May 30</p>
-                            
+
                             <h3>Shipping Address</h3>
                             <p id="confirmation-address">123 Main St, Anytown, CA 12345</p>
                         </div>
-                        
+
                         <a href="#" class="track-order-btn">Track Your Order</a>
                         <a href="#" class="continue-shopping-btn">Continue Shopping</a>
                     </div>
@@ -297,13 +299,13 @@
             <div class="order-summary-sidebar">
                 <div class="order-summary-content">
                     <h2>Order Summary</h2>
-                    
+
                     <div class="order-summary-items" id="summary-items">
                         <!-- Order items will be populated by JS -->
                     </div>
-                    
+
                     <div class="summary-divider"></div>
-                    
+
                     <div class="promo-code-section">
                         <div class="promo-form" id="promo-form">
                             <input type="text" id="promo-code" placeholder="Enter promo code">
@@ -312,20 +314,20 @@
                         <div class="applied-promo hidden" id="applied-promo">
                             <div class="applied-promo-info">
                                 <span class="promo-code-display" id="applied-promo-code">CODE20</span>
-                                <span class="promo-discount" id="promo-discount-amount">-$20.00</span>
+                                <span class="promo-discount" id="promo-discount-amount">-L.E20.00</span>
                             </div>
                             <button type="button" id="remove-promo" class="remove-promo-btn" title="Remove promo code">
                                 <i class="fas fa-times"></i>
                             </button>
                         </div>
                     </div>
-                    
+
                     <div class="summary-divider"></div>
-                    
+
                     <div class="order-totals-summary">
                         <div class="total-row">
                             <span>Subtotal</span>
-                            <span id="summary-subtotal">$0.00</span>
+                            <span id="summary-subtotal">L.E0.00</span>
                         </div>
                         <div class="total-row">
                             <span>Shipping</span>
@@ -333,18 +335,18 @@
                         </div>
                         <div class="total-row hidden" id="summary-discount-row">
                             <span>Discount</span>
-                            <span id="summary-discount">-$0.00</span>
+                            <span id="summary-discount">-L.E0.00</span>
                         </div>
                         <div class="total-row">
                             <span>Tax</span>
-                            <span id="summary-tax">$0.00</span>
+                            <span id="summary-tax">L.E0.00</span>
                         </div>
                         <div class="total-row final-total">
                             <span>Total</span>
-                            <span id="summary-total">$0.00</span>
+                            <span id="summary-total">L.E0.00</span>
                         </div>
                     </div>
-                    
+
                     <div class="order-security">
                         <div class="security-badge">
                             <i class="fas fa-lock"></i>
@@ -369,17 +371,17 @@
                 <h1>Sugar Cane Shop</h1>
                 <p>Welcome to the world of Florist, where flowers come to life with love and creativity. Discover our story, our passion for flowers, and our commitment to making every moment memorable.</p>
             </div>
-            
+
             <div class="footer-links">
                 <h3>Links</h3>
                 <ul>
-                <li><a href="../HTML/Home.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="../HTML/CustomerService.html">Customer Service</a></li>
-                <li><a href="../HTML/CustomerService.html">FAQs</a></li>
+                    <li><a href="../HTML/Home.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="../HTML/CustomerService.html">Customer Service</a></li>
+                    <li><a href="../HTML/CustomerService.html">FAQs</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-contact">
                 <h3>Contact Us</h3>
                 <p><i class="fas fa-map-marker-alt"></i> 13 Fifth Avenue, New York 101660</p>
@@ -387,7 +389,7 @@
                 <p><i class="fas fa-phone-alt"></i> +91 987 654 321</p>
             </div>
         </div>
-    
+
         <div class="footer-copyright">
             <div class="social-icons">
                 <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
@@ -395,7 +397,7 @@
                 <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
             </div>
-                <p>Copyright © 2025 Sugar Cane Shop</p>
+            <p>Copyright © 2025 Sugar Cane Shop</p>
         </div>
 
         <div class="scroll-top">
@@ -406,4 +408,5 @@
     <script src="../JS/Checkout.js"></script>
     <script src="../JS/Nav.js"></script>
 </body>
+
 </html>
