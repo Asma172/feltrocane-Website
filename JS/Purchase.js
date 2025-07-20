@@ -1,4 +1,12 @@
 function changeMainImage(thumbnail) {
-    var mainImage = document.getElementById('mainImage');
+    const mainImage = document.getElementById('mainImage');
+
     mainImage.src = thumbnail.src;
+
+    const reducedHeight = thumbnail.naturalHeight * 0.5;
+    mainImage.style.height = reducedHeight + 'px';
+
+
+    mainImage.style.width = 'auto';
+
 }
