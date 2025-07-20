@@ -202,11 +202,11 @@ button {
 
 /* ==================== Start: About Section ==================== */
 .thirdSection {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #E3E3E3; */
+    
     background-color: rgba(227, 227, 227, 0.90);
     gap: 50px;
     flex-wrap: wrap;
@@ -378,44 +378,11 @@ button {
         font-size: 11px;
     }
 }
-
-@media (max-width: 400px) {
-    .contentOfMainPage {
-        width: 95%;
-        font-size: 14px;
-        top: 6rem;
-    }
-
-    .secondSection {
-        padding: 15px;
-    }
-
-    .archSmall, .archBig {
-        width: 120px;
-        height: 200px;
-    }
-
-    .textContent h2 {
-        font-size: 18px;
-    }
-
-    .textContent h3 {
-        font-size: 16px;
-    }
-
-    .textContent p {
-        font-size: 10px;
-    }
-
-    .textContent button {
-        padding: 8px 16px;
-    }
-}
 /* ==================== End: About Section ==================== */
 
 /* ==================== Start: Products Section ==================== */
 .products-container {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
@@ -646,6 +613,16 @@ button {
     }
 }
 
+footer {
+    position: static; 
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
 /* ==================== End: Responsive Products Section ==================== */
 
 /* ==================== End: Products Section ==================== */
@@ -803,5 +780,93 @@ button {
 
   .scroll-top i {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 475px) {
+  footer {
+    position: static !important;
+    margin-top: 20px;
+  }
+
+  .hero-section {
+    height: auto;
+    flex-direction: column;
+    padding: 40px 15px;
+  }
+
+  .content {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .feature-item {
+    flex-basis: 100%;
+    padding: 15px 10px;
+  }
+
+  .thirdSection {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .archSmall, .archBig {
+    width: 110px;
+    height: 180px;
+  }
+
+  .textContent {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .textContent h2 {
+    font-size: 18px;
+  }
+
+  .textContent h3 {
+    font-size: 16px;
+  }
+
+  .textContent p {
+    font-size: 11px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .product-image {
+    height: 110px;
+  }
+
+  .product-name {
+    font-size: 13px;
+  }
+
+  .sale-price {
+    font-size: 13px;
+  }
+
+  .scroll-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .scroll-top i {
+    font-size: 14px;
   }
 }
