@@ -847,5 +847,10 @@ button[type="submit"]:hover::before,
         width: 100%;
     }
 }
+.thumbnail {
+    width: 100px;
+    height: auto; 
+    margin: 5px; 
+}
 
 /* ==================== End: Responsive Styles ==================== */
