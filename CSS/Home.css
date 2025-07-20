@@ -686,3 +686,122 @@ button {
     font-size: 20px;
 }
 /* ==================== End: Scroll Top Button ==================== */
+
+
+
+
+
+
+/* ========== Fully Responsive Custom Media Queries ========== */
+
+/* Large tablets and small laptops */
+@media (max-width: 1024px) {
+  .feature-item {
+    flex-basis: 48%;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Tablets and landscape phones */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 10px;
+  }
+
+  .content {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 10px;
+  }
+
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    flex-basis: 100%;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .imageContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .thirdSection {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .archSmall, .archBig {
+    width: 150px;
+    height: 230px;
+  }
+
+  .textContent h2 {
+    font-size: 20px;
+  }
+
+  .textContent h3 {
+    font-size: 18px;
+  }
+
+  .textContent p {
+    font-size: 12px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .product-image {
+    height: 120px;
+  }
+
+  .product-name {
+    font-size: 13px;
+  }
+
+  .sale-price {
+    font-size: 14px;
+  }
+
+  .archSmall, .archBig {
+    width: 120px;
+    height: 200px;
+  }
+
+  .textContent p {
+    font-size: 11px;
+  }
+
+  .textContent button {
+    padding: 8px 16px;
+  }
+
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+  }
+
+  .scroll-top i {
+    font-size: 16px;
+  }
+}
