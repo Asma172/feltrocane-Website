@@ -919,9 +919,6 @@ hr {
     box-sizing: border-box;
   }
 
-  section, div, header, footer {
-    overflow-x: hidden;
-  }
 }
 
 .video-placeholder video {
