@@ -105,7 +105,8 @@ document.addEventListener("DOMContentLoaded", function() {
     handleMobileCart();
     
     // Mobile menu toggle functionality
-    mobileMenuBtn.addEventListener('click', function() {
+    mobileMenuBtn.addEventListener('click', function(event) {
+        event.stopPropagation();
         navLinks.classList.toggle('active');
         menuOpen = !menuOpen;
         
