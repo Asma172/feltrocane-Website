@@ -413,7 +413,7 @@ hr {
 }
 
 .video-placeholder::before {
-  content: "\f144"; /* Play button icon */
+  /*content: "\f144";  Play button icon */
   font-family: "Font Awesome 6 Free";
   position: absolute;
   top: 50%;
